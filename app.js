@@ -3,13 +3,13 @@ const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 4000;
 const cors = require('cors');
 
-app.use(cors());
+
 
 const db = require("./db");
 
 const app = express();
 
-
+app.use(cors());
 // parses json data sent to us by the user
 app.use(bodyParser.json());
 
